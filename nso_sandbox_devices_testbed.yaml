@@ -1,43 +1,37 @@
+testbed:
+  credentials:
+    default:
+      password: cisco
+      username: cisco
+    enable:
+      password: cisco
+
 devices:
   core-rtr01:
     connections:
       cli:
         ip: 10.10.20.173
-        protocol: TELNET
-    credentials:
-      default:
-        password: '%ASK{}'
-        username: cisco
-      enable:
-        password: '%ASK{}'
-    os: IOS XR
-    type: IOS XR
+        protocol: telnet
+        port: 23
+    
+    os: ios xr
+    type: iosxr
   core-rtr02:
     connections:
       cli:
         ip: 10.10.20.174
         protocol: TELNET
-    credentials:
-      default:
-        password: '%ASK{}'
-        username: cisco
-      enable:
-        password: '%ASK{}'
-    os: IOS XR
-    type: IOS XR
+    
+    os: ios xr
+    type: iosxr
   dist-rtr01:
     connections:
       cli:
         ip: 10.10.20.175
         protocol: TELNET
-    credentials:
-      default:
-        password: '%ASK{}'
-        username: cisco
-      enable:
-        password: '%ASK{}'
-    os: IOS XE
-    type: IOS XE
+    
+    os: ios xe
+    type: iosxe
   dist-rtr02:
     connections:
       cli:
@@ -45,12 +39,12 @@ devices:
         protocol: TELNET
     credentials:
       default:
-        password: '%ASK{}'
+        password: cisco
         username: cisco
       enable:
-        password: '%ASK{}'
-    os: IOS XE
-    type: IOS XE
+        password: cisco
+    os: ios xe
+    type: iosxe
   dist-sw01:
     connections:
       cli:
@@ -58,12 +52,12 @@ devices:
         protocol: TELNET
     credentials:
       default:
-        password: '%ASK{}'
+        password: cisco
         username: cisco
       enable:
-        password: '%ASK{}'
-    os: NX-OS
-    type: NX-OS
+        password: cisco
+    os: nx os
+    type: nxos
   dist-sw02:
     connections:
       cli:
@@ -71,48 +65,33 @@ devices:
         protocol: TELNET
     credentials:
       default:
-        password: '%ASK{}'
+        password: cisco
         username: cisco
       enable:
-        password: '%ASK{}'
-    os: NX-OS
-    type: NX-OS
+        password: cisco
+    os: nx os
+    type: nxos
   edge-firewall01:
     connections:
       cli:
         ip: 10.10.20.171
         protocol: TELNET
-    credentials:
-      default:
-        password: '%ASK{}'
-        username: cisco
-      enable:
-        password: '%ASK{}'
-    os: ASA
-    type: ASA
+    
+    os: asa
+    type: asa
   edge-sw01:
     connections:
       cli:
         ip: 10.10.20.172
         protocol: TELNET
-    credentials:
-      default:
-        password: '%ASK{}'
-        username: cisco
-      enable:
-        password: '%ASK{}'
-    os: IOS
-    type: IOS
+    
+    os: ios
+    type: ios
   internet-rtr01:
     connections:
       cli:
         ip: 10.10.20.181
         protocol: TELNET
-    credentials:
-      default:
-        password: '%ASK{}'
-        username: cisco
-      enable:
-        password: '%ASK{}'
-    os: IOS XE
-    type: IOS XE
+    
+    os: ios xe
+    type: ios xe

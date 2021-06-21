@@ -1,0 +1,22 @@
+testbed:
+  credentials:
+    default:
+      password: cisco
+      username: cisco
+    enable:
+      password: cisco
+
+devices:
+  dist-rtr01:
+    connections:
+      cli:
+        ip: 10.10.20.175
+        protocol: telnet
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+      enable:
+        password: cisco
+    os: iosxe
+    type: ios xe
