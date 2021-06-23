@@ -12,86 +12,62 @@ devices:
       cli:
         ip: 10.10.20.173
         protocol: telnet
-        port: 23
-    
-    os: ios xr
+    os: iosxr
     type: iosxr
   core-rtr02:
     connections:
       cli:
         ip: 10.10.20.174
-        protocol: TELNET
-    
-    os: ios xr
+        protocol: telnet
+    os: iosxr
     type: iosxr
   dist-rtr01:
     connections:
       cli:
         ip: 10.10.20.175
-        protocol: TELNET
-    
-    os: ios xe
+        protocol: telnet
+    os: iosxe
     type: iosxe
   dist-rtr02:
     connections:
       cli:
         ip: 10.10.20.176
-        protocol: TELNET
-    credentials:
-      default:
-        password: cisco
-        username: cisco
-      enable:
-        password: cisco
-    os: ios xe
+        protocol: telnet
+    os: iosxe
     type: iosxe
   dist-sw01:
     connections:
       cli:
         ip: 10.10.20.177
-        protocol: TELNET
-    credentials:
-      default:
-        password: cisco
-        username: cisco
-      enable:
-        password: cisco
-    os: nx os
+        protocol: telnet
+    os: nxos
     type: nxos
   dist-sw02:
     connections:
       cli:
         ip: 10.10.20.178
-        protocol: TELNET
-    credentials:
-      default:
-        password: cisco
-        username: cisco
-      enable:
-        password: cisco
-    os: nx os
+        protocol: telnet
+    os: nxos
     type: nxos
   edge-firewall01:
     connections:
       cli:
         ip: 10.10.20.171
-        protocol: TELNET
-    
+        protocol: telnet
     os: asa
+    platform: asav
     type: asa
   edge-sw01:
     connections:
       cli:
         ip: 10.10.20.172
-        protocol: TELNET
-    
+        protocol: telnet
     os: ios
     type: ios
   internet-rtr01:
     connections:
       cli:
         ip: 10.10.20.181
-        protocol: TELNET
-    
-    os: ios xe
-    type: ios xe
+        protocol: telnet
+    os: iosxe
+    type: iosxe
