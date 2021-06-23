@@ -23,11 +23,15 @@ if __name__ == "__main__":
     testbed = load(args.testbed)
 
     # Connect to network devices
-    testbed.connect()
+    print(f'Connecting to all devices in testbed {testbed.name}')
+    testbed.connect(log_stdout=False)
 
     # Run commands to gather output from devices
 
-
+    # Disconnect from network devices
+    for device in testbed.devices:
+        print(f'Disconnecting from device {device}.')
+        testbed.devices[device].disconnect()
     # Build inventory report data structure
 
     # Generate CSV file of data
